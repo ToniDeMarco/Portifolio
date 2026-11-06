@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ========== SEO ========== -->
+  <!-- SUBSTITUIR: troque https://www.masolucoes.com.br/ pelo domínio real em todas as ocorrências -->
+  <title>M.A Soluções | Criação de Sites e Google Meu Negócio – Marco Antônio, Web Designer</title>
+  <meta name="description" content="Marco Antônio, web designer da M.A Soluções: criação de sites profissionais e configuração do Google Meu Negócio para sua empresa ser encontrada primeiro na sua região. Fale pelo WhatsApp.">
+  <meta name="author" content="Marco Antônio – M.A Soluções">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.masolucoes.com.br/">
+  <meta name="theme-color" content="#121212">
+
+  <!-- Open Graph / redes sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="M.A Soluções">
+  <meta property="og:title" content="M.A Soluções | Sites e Google Meu Negócio que colocam sua empresa em destaque">
+  <meta property="og:description" content="Sites profissionais e Google Meu Negócio otimizado para sua empresa ser referência na região.">
+  <meta property="og:url" content="https://www.masolucoes.com.br/">
+  <meta property="og:image" content="https://www.masolucoes.com.br/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- Dados estruturados: ajudam Google e assistentes de I.A a entender quem você é e o que oferece -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.masolucoes.com.br/#empresa",
+        "name": "M.A Soluções",
+        "description": "Criação de sites profissionais, configuração e otimização do Google Meu Negócio (Perfil da Empresa no Google) e SEO local para pequenos e médios negócios.",
+        "url": "https://www.masolucoes.com.br/",
+        "logo": "https://www.masolucoes.com.br/assets/icons/favicon.svg",
+        "image": "https://www.masolucoes.com.br/assets/img/og-image.jpg",
+        "telephone": "+55-38-99866-8730",
+        "priceRange": "$$",
+        "areaServed": { "@type": "Country", "name": "Brasil" },
+        "founder": { "@id": "https://www.masolucoes.com.br/#marco" },
+        "sameAs": ["https://www.instagram.com/psivitoria.com.vc/"],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+55-38-99866-8730",
+          "contactType": "customer service",
+          "availableLanguage": "Portuguese"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Criação de sites profissionais", "description": "Sites rápidos, responsivos e otimizados para SEO, feitos para transformar visitas em contatos." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Configuração do Google Meu Negócio", "description": "Criação, verificação e otimização do Perfil da Empresa no Google para aparecer no Google Maps e na busca local." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO local", "description": "Otimização para a empresa ser encontrada por clientes da própria região." } }
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.masolucoes.com.br/#marco",
+        "name": "Marco Antônio",
+        "jobTitle": "Web Designer",
+        "worksFor": { "@id": "https://www.masolucoes.com.br/#empresa" },
+        "image": "https://www.masolucoes.com.br/assets/img/marco-antonio-800.jpg",
+        "knowsAbout": ["Web design", "Criação de sites", "Google Meu Negócio", "SEO local"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.masolucoes.com.br/#site",
+        "url": "https://www.masolucoes.com.br/",
+        "name": "M.A Soluções",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://www.masolucoes.com.br/#empresa" }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ========== PERFORMANCE ========== -->
+  <link rel="preload" href="assets/fonts/instrument-serif-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/work-sans-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/marco-antonio-800.webp" as="image" type="image/webp" imagesrcset="assets/img/marco-antonio-480.webp 480w, assets/img/marco-antonio-800.webp 800w" imagesizes="(min-width: 1200px) 460px, (min-width: 768px) 40vw, 80vw">
+
+  <!-- Marca que o JS está ativo (o preloader e as animações só existem com JS) -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- CSS crítico: fontes, base e preloader. O restante carrega sem bloquear a renderização. -->
+  <style>
+    @font-face{font-family:"Instrument Serif";src:url(assets/fonts/instrument-serif-regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+    @font-face{font-family:"Instrument Serif";src:url(assets/fonts/instrument-serif-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+    @font-face{font-family:"Work Sans";src:url(assets/fonts/work-sans-variable.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+    html{background:#121212;color:#E8E6E1}
+    body{margin:0;font-family:"Work Sans",system-ui,sans-serif}
+    .preloader{display:none}
+    .js .preloader{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#121212;transition:opacity .7s ease,visibility .7s ease}
+    .js .preloader.is-done{opacity:0;visibility:hidden}
+    /* failsafe: se o JS falhar, o preloader some sozinho */
+    .js .preloader{animation:pl-out .6s 8s forwards}@keyframes pl-out{to{opacity:0;visibility:hidden}}
+    .preloader__inner{display:flex;flex-direction:column;align-items:center;gap:28px}
+    .preloader__logo{width:clamp(120px,28vw,180px);height:auto;overflow:visible}
+    .preloader__logo path{fill:none;stroke:#F5B700;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;opacity:0}
+    .preloader__count{font:700 clamp(28px,6vw,40px)/1 "Work Sans",system-ui,sans-serif;color:#E8E6E1;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+    .preloader__bar{position:absolute;left:0;bottom:0;width:100%;height:2px;background:rgba(232,230,225,.08)}
+    .preloader__bar span{display:block;height:100%;width:100%;background:#F5B700;transform:scaleX(0);transform-origin:left}
+  </style>
+  <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ========== PRELOADER ========== -->
+  <div class="preloader" id="preloader" role="status" aria-live="polite" aria-label="Carregando a página">
+    <div class="preloader__inner">
+      <svg class="preloader__logo" viewBox="0 0 200 120" aria-hidden="true">
+        <path pathLength="1" d="M12 108V12l44 62 44-62v96"/>
+        <path pathLength="1" d="M120 108 153 12l33 96"/>
+        <path pathLength="1" d="M132 74h42"/>
+      </svg>
+      <span class="preloader__count" id="preloader-count">0%</span>
+    </div>
+    <div class="preloader__bar" aria-hidden="true"><span id="preloader-bar"></span></div>
+  </div>
+
+  <!-- Cursor customizado (apenas em dispositivos com mouse) -->
+  <div class="cursor" aria-hidden="true">
+    <span class="cursor__ring"><span class="cursor__label"></span></span>
+    <span class="cursor__dot"></span>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a class="logo" href="#inicio" aria-label="M.A Soluções – voltar ao início">
+        <svg class="logo__mark" viewBox="0 0 200 120" aria-hidden="true">
+          <path d="M12 108V12l44 62 44-62v96M120 108 153 12l33 96M132 74h42"/>
+        </svg>
+        <span class="logo__text">M.A <em>Soluções</em></span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#inicio">Início</a></li>
+          <li><a class="nav__link" href="#trabalhos">Trabalhos</a></li>
+          <li><a class="nav__link" href="#contato">Contato</a></li>
+        </ul>
+        <a class="btn btn--sm btn--outline" href="https://api.whatsapp.com/send/?phone=5538998668730&amp;text=Ol%C3%A1%2C%20Marco!%20Vim%20pelo%20site%20e%20quero%20destacar%20meu%20neg%C3%B3cio.&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" aria-label="Fale comigo pelo WhatsApp (abre em nova aba)">WhatsApp</a>
+      </nav>
+
+      <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu mobile -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Navegação mobile">
+      <ol class="mobile-menu__list">
+        <li><a class="mobile-menu__link" href="#inicio"><span>01</span>Início</a></li>
+        <li><a class="mobile-menu__link" href="#trabalhos"><span>02</span>Trabalhos</a></li>
+        <li><a class="mobile-menu__link" href="#contato"><span>03</span>Contato</a></li>
+      </ol>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="https://api.whatsapp.com/send/?phone=5538998668730&amp;text=Ol%C3%A1%2C%20Marco!%20Vim%20pelo%20site%20e%20quero%20destacar%20meu%20neg%C3%B3cio.&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener">(38) 99866-8730</a>
+      <a href="https://www.instagram.com/psivitoria.com.vc/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+
+  <main id="conteudo">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <!-- Circuitos lógicos: desenhados em canvas e acesos pelo movimento do mouse -->
+      <canvas class="hero__circuits" id="circuits" aria-hidden="true"></canvas>
+      <div class="hero__grid container">
+        <div class="hero__content">
+          <p class="eyebrow" data-reveal>Web Designer · Google Meu Negócio</p>
+
+          <!-- Card fosco: separa o texto da animação de circuitos ao fundo -->
+          <div class="hero__card tech-card" data-reveal style="--d:.04s">
+            <span class="tech-card__glow" aria-hidden="true"></span>
+            <h1 class="hero__title" id="hero-title" data-reveal style="--d:.08s">
+              Seja <em>referência</em> na sua região.
+            </h1>
+
+            <p class="hero__lead" data-reveal style="--d:.16s">
+              Seu cliente pesquisa no Google antes de decidir. Se sua empresa não transmite confiança, ele escolhe quem transmite: seu concorrente.  </p>
+            <p class="hero__text" data-reveal style="--d:.22s">
+              Sou <strong>Marco Antônio</strong>, da M.A Soluções. Crio sites profissionais e configuro o seu
+              Google Meu Negócio para que sua empresa apareça primeiro e passe confiança desde o primeiro clique.
+            </p>
+          </div>
+
+          <div class="hero__actions" data-reveal style="--d:.3s">
+            <a class="btn btn--whatsapp" href="https://api.whatsapp.com/send/?phone=5538998668730&amp;text=Ol%C3%A1%2C%20Marco!%20Vim%20pelo%20site%20e%20quero%20destacar%20meu%20neg%C3%B3cio.&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" aria-label="Fale comigo pelo WhatsApp (abre em nova aba)">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Fale comigo
+            </a>
+            <a class="link-arrow" href="#trabalhos">
+              Ver trabalhos
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Visual interativo: reage ao movimento do mouse -->
+        <div class="hero__visual" data-reveal style="--d:.2s">
+          <div class="stage">
+            
+
+            <div class="stage__photo">
+              <picture>
+                <source type="image/webp" srcset="assets/img/marco-antonio-480.webp 480w, assets/img/marco-antonio-800.webp 800w" sizes="(min-width: 1200px) 460px, (min-width: 768px) 40vw, 80vw">
+                <img src="assets/img/marco-antonio-800.jpg" srcset="assets/img/marco-antonio-480.jpg 480w, assets/img/marco-antonio-800.jpg 800w" sizes="(min-width: 1200px) 460px, (min-width: 768px) 40vw, 80vw" width="800" height="1199" alt="Marco Antônio, web designer da M.A Soluções" fetchpriority="high" decoding="async">
+              </picture>
+              <span class="stage__shade" aria-hidden="true"></span>
+            </div>
+
+            <!-- Camada editorial (estilo pôster): rótulos, linhas e textos sobre a foto -->
+            <div class="poster" aria-hidden="true">
+              
+              <p class="poster__kicker">Seu cliente<br>já procurou<br><em>você no<br>Google?</em></p>
+              <span class="poster__line poster__line--bracket"></span>
+              <span class="poster__line poster__line--left"></span>
+              <span class="poster__line poster__line--bottom"></span>
+              <p class="poster__headline">Como<br>está o seu<br><em>posiciona</em><em>mento?</em></p>
+            </div>
+
+            <div class="badge badge--maps" aria-hidden="true">
+              <span class="badge__icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-pin"/></svg></span>
+              <span><strong>Google Meu Negócio</strong><small>Perfil otimizado</small></span>
+            </div>
+            <div class="badge badge--stars" aria-hidden="true">
+              <span class="badge__stars">★★★★★</span>
+              <small>Seu negócio em destaque</small>
+            </div>
+
+            <svg class="stage__seal" viewBox="0 0 120 120" aria-hidden="true">
+              <defs><path id="seal-circle" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
+              <text><textPath href="#seal-circle">SITES · GOOGLE MEU NEGÓCIO · SEO LOCAL ·</textPath></text>
+              <path class="stage__seal-arrow" d="M48 72 72 48M54 48h18v18"/>
+            </svg>
+          </div>
+        </div>
+
+        <ul class="services" aria-label="Serviços">
+          <li class="service tech-card" data-reveal style="--d:.05s">
+            <span class="tech-card__glow" aria-hidden="true"></span>
+            <span class="service__num">01</span>
+            <h2 class="service__title">Sites profissionais</h2>
+            <p>Rápidos, responsivos e feitos para transformar visitas em contatos.</p>
+          </li>
+          <li class="service tech-card" data-reveal style="--d:.12s">
+            <span class="tech-card__glow" aria-hidden="true"></span>
+            <span class="service__num">02</span>
+            <h2 class="service__title">Google Meu Negócio</h2>
+            <p>Perfil completo e otimizado para aparecer no Google Maps e na busca.</p>
+          </li>
+          <li class="service tech-card" data-reveal style="--d:.19s">
+            <span class="tech-card__glow" aria-hidden="true"></span>
+            <span class="service__num">03</span>
+            <h2 class="service__title">SEO local</h2>
+            <p>Sua empresa encontrada por quem está perto e pronto para comprar.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== TRABALHOS ========== -->
+    <section class="work" id="trabalhos" aria-labelledby="work-title">
+      <!-- Trilhas que conectam título e cards (desenhadas pelo JS) -->
+      <svg class="wires" aria-hidden="true"></svg>
+      <div class="container">
+        <header class="work__head">
+          <p class="eyebrow" data-reveal>Trabalhos selecionados <span>(03)</span></p>
+          <h2 class="work__title" id="work-title" data-reveal style="--d:.08s">
+            Negócios que passaram a ser <em>encontrados</em>.
+          </h2>
+          <p class="work__intro" data-reveal style="--d:.16s">
+            Cada projeto une um site pensado para converter com um perfil no Google que trabalha 24 horas
+            por dia atraindo clientes da região.
+          </p>
+        </header>
+
+        <!-- SUBSTITUIR: projetos, imagens e resultados abaixo são fictícios -->
+        <div class="projects">
+          <article class="project" data-reveal>
+            <a class="project__media" href="#" aria-label="Ver projeto Sorriso Prime Odontologia" data-cursor-label="Ver">
+              <img src="assets/img/projeto-odontologia.svg" width="1200" height="800" loading="lazy" decoding="async" alt="Página inicial do site da clínica Sorriso Prime Odontologia">
+            </a>
+            <div class="project__body">
+              <span class="project__num">01</span>
+              <ul class="tags" aria-label="Serviços do projeto">
+                <li>Site institucional</li><li>Google Meu Negócio</li>
+              </ul>
+              <h3 class="project__title">Sorriso Prime Odontologia</h3>
+              <p>Site com agendamento direto pelo WhatsApp e perfil no Google reestruturado com fotos, serviços e avaliações.</p>
+              <dl class="project__stats">
+                <div><dt>Ligações pelo Google</dt><dd>+120%</dd></div>
+                <div><dt>Site no ar em</dt><dd>15 dias</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="project project--reverse" data-reveal>
+            <a class="project__media" href="#" aria-label="Ver projeto Casa Brasa Restaurante" data-cursor-label="Ver">
+              <img src="assets/img/projeto-restaurante.svg" width="1200" height="800" loading="lazy" decoding="async" alt="Página inicial do site do restaurante Casa Brasa">
+            </a>
+            <div class="project__body">
+              <span class="project__num">02</span>
+              <ul class="tags" aria-label="Serviços do projeto">
+                <li>Landing page</li><li>SEO local</li>
+              </ul>
+              <h3 class="project__title">Casa Brasa Restaurante</h3>
+              <p>Cardápio digital, reservas pelo WhatsApp e otimização para buscas como “restaurante perto de mim”.</p>
+              <dl class="project__stats">
+                <div><dt>Rotas pelo Maps</dt><dd>+3×</dd></div>
+                <div><dt>Nota no Google</dt><dd>4,8★</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <a class="project__media" href="#" aria-label="Ver projeto Andrade &amp; Lima Advocacia" data-cursor-label="Ver">
+              <img src="assets/img/projeto-advocacia.svg" width="1200" height="800" loading="lazy" decoding="async" alt="Página inicial do site do escritório Andrade &amp; Lima Advocacia">
+            </a>
+            <div class="project__body">
+              <span class="project__num">03</span>
+              <ul class="tags" aria-label="Serviços do projeto">
+                <li>Site institucional</li><li>Google Meu Negócio</li>
+              </ul>
+              <h3 class="project__title">Andrade &amp; Lima Advocacia</h3>
+              <p>Identidade digital sóbria, páginas por área de atuação e perfil verificado no Google Maps.</p>
+              <dl class="project__stats">
+                <div><dt>Contatos pelo site</dt><dd>+85%</dd></div>
+                <div><dt>Posição no Maps</dt><dd>Top 3</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA FINAL ========== -->
+    <section class="cta" id="contato" aria-labelledby="cta-title">
+      <svg class="wires" aria-hidden="true"></svg>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Sites profissionais</span><span>Google Meu Negócio</span><span>SEO local</span><span>Mais clientes</span>
+          <span>Sites profissionais</span><span>Google Meu Negócio</span><span>SEO local</span><span>Mais clientes</span>
+        </div>
+      </div>
+
+      <div class="cta__inner container">
+        <p class="eyebrow" data-reveal>Vamos conversar?</p>
+        <h2 class="cta__title" id="cta-title" data-reveal style="--d:.08s">
+          Cada dia fora do Google é um cliente <em>indo para o concorrente.</em>
+        </h2>
+        <div class="cta__side" data-reveal style="--d:.16s">
+          <p>
+            Me chame no WhatsApp, conte sobre o seu negócio e eu te mostro o caminho para aparecer na frente.
+            Atendimento direto comigo, sem intermediários.
+          </p>
+          <a class="btn btn--whatsapp btn--lg" href="https://api.whatsapp.com/send/?phone=5538998668730&amp;text=Ol%C3%A1%2C%20Marco!%20Vim%20pelo%20site%20e%20quero%20destacar%20meu%20neg%C3%B3cio.&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp agora (abre em nova aba)">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Chamar no WhatsApp
+          </a>
+          <a class="link-arrow link-arrow--muted" href="https://www.instagram.com/psivitoria.com.vc/" target="_blank" rel="noopener">
+            ou acompanhe no Instagram
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__grid container">
+      <div class="footer__brand">
+        <a class="logo" href="#inicio" aria-label="M.A Soluções – voltar ao início">
+          <svg class="logo__mark" viewBox="0 0 200 120" aria-hidden="true">
+            <path d="M12 108V12l44 62 44-62v96M120 108 153 12l33 96M132 74h42"/>
+          </svg>
+          <span class="logo__text">M.A <em>Soluções</em></span>
+        </a>
+        <p>Sites profissionais e Google Meu Negócio para empresas que querem ser a primeira escolha da sua região.</p>
+        <ul class="social" aria-label="Redes sociais">
+          <li>
+            <a class="social__link" href="https://www.instagram.com/psivitoria.com.vc/" target="_blank" rel="noopener" aria-label="Instagram da M.A Soluções (abre em nova aba)">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-instagram"/></svg>
+            </a>
+          </li>
+          <li>
+            <a class="social__link" href="https://api.whatsapp.com/send/?phone=5538998668730&amp;text=Ol%C3%A1%2C%20Marco!%20Vim%20pelo%20site%20e%20quero%20destacar%20meu%20neg%C3%B3cio.&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" aria-label="WhatsApp da M.A Soluções (abre em nova aba)">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="footer__col" aria-label="Links úteis">
+        <h2 class="footer__heading">Links úteis</h2>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#trabalhos">Trabalhos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h2 class="footer__heading">Contato</h2>
+        <ul>
+          <li><a href="https://api.whatsapp.com/send/?phone=5538998668730&amp;text=Ol%C3%A1%2C%20Marco!%20Vim%20pelo%20site%20e%20quero%20destacar%20meu%20neg%C3%B3cio.&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener">(38) 99866-8730</a></li>
+          <!-- SUBSTITUIR: e-mail real -->
+          <li><a href="mailto:contato@masolucoes.com.br">contato@masolucoes.com.br</a></li>
+          <li><a href="https://www.instagram.com/psivitoria.com.vc/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom container">
+      <p>© <span id="year">2026</span> M.A Soluções · Marco Antônio. Todos os direitos reservados.</p>
+      <a class="footer__top" href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <!-- Botão WhatsApp flutuante -->
+  <a class="wa-float" href="https://api.whatsapp.com/send/?phone=5538998668730&amp;text=Ol%C3%A1%2C%20Marco!%20Vim%20pelo%20site%20e%20quero%20destacar%20meu%20neg%C3%B3cio.&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp (abre em nova aba)">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <!-- Sprite de ícones -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.4 5 5.15-1.35A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.06.8.82-2.98-.2-.31a8.22 8.22 0 1 1 6.92 3.82Zm4.5-6.16c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.55.12-.16.25-.63.8-.78.96-.14.17-.29.19-.53.06a6.74 6.74 0 0 1-3.37-2.94c-.25-.44.25-.41.72-1.36.08-.16.04-.3-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.74 2.74 0 0 0-.86 2.04 4.77 4.77 0 0 0 1 2.53 10.9 10.9 0 0 0 4.18 3.7c1.56.67 2.17.73 2.95.61.47-.07 1.46-.6 1.66-1.17.21-.58.21-1.07.15-1.17-.06-.11-.22-.17-.47-.29Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M7 2.9h10A4.1 4.1 0 0 1 21.1 7v10a4.1 4.1 0 0 1-4.1 4.1H7A4.1 4.1 0 0 1 2.9 17V7A4.1 4.1 0 0 1 7 2.9Z"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m-6-6 6 6 6-6"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></symbol>
+  </svg>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
