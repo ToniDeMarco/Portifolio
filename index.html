@@ -67,7 +67,7 @@
         "name": "Marco Antônio",
         "jobTitle": "Web Designer",
         "worksFor": { "@id": "https://www.masolucoes.com.br/#empresa" },
-        "image": "https://www.masolucoes.com.br/assets/img/marco-antonio-800.jpg",
+        "image": "https://www.masolucoes.com.br/assets/img/marco-antonio-800.webp",
         "knowsAbout": ["Web design", "Criação de sites", "Google Meu Negócio", "SEO local"]
       },
       {
@@ -85,7 +85,8 @@
   <!-- ========== PERFORMANCE ========== -->
   <link rel="preload" href="assets/fonts/instrument-serif-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/work-sans-variable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/img/marco-antonio-800.webp" as="image" type="image/webp" imagesrcset="assets/img/marco-antonio-480.webp 480w, assets/img/marco-antonio-800.webp 800w" imagesizes="(min-width: 1200px) 460px, (min-width: 768px) 40vw, 80vw">
+  <link rel="preload" href="assets/fonts/rajdhani-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/marco-antonio-800.webp" as="image" type="image/webp" imagesrcset="assets/img/marco-antonio-480.webp 480w, assets/img/marco-antonio-800.webp 800w" imagesizes="(min-width: 1200px) 460px, (min-width: 768px) 40vw, 90vw">
 
   <!-- Marca que o JS está ativo (o preloader e as animações só existem com JS) -->
   <script>document.documentElement.classList.add('js');</script>
@@ -95,6 +96,7 @@
     @font-face{font-family:"Instrument Serif";src:url(assets/fonts/instrument-serif-regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
     @font-face{font-family:"Instrument Serif";src:url(assets/fonts/instrument-serif-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
     @font-face{font-family:"Work Sans";src:url(assets/fonts/work-sans-variable.woff2) format("woff2");font-weight:400 700;font-style:normal;font-display:swap}
+    @font-face{font-family:"Rajdhani";src:url(assets/fonts/rajdhani-600.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}
     html{background:#121212;color:#E8E6E1}
     body{margin:0;font-family:"Work Sans",system-ui,sans-serif}
     .preloader{display:none}
@@ -219,10 +221,7 @@
             
 
             <div class="stage__photo">
-              <picture>
-                <source type="image/webp" srcset="assets/img/marco-antonio-480.webp 480w, assets/img/marco-antonio-800.webp 800w" sizes="(min-width: 1200px) 460px, (min-width: 768px) 40vw, 80vw">
-                <img src="assets/img/marco-antonio-800.jpg" srcset="assets/img/marco-antonio-480.jpg 480w, assets/img/marco-antonio-800.jpg 800w" sizes="(min-width: 1200px) 460px, (min-width: 768px) 40vw, 80vw" width="800" height="1199" alt="Marco Antônio, web designer da M.A Soluções" fetchpriority="high" decoding="async">
-              </picture>
+              <img src="assets/img/marco-antonio-800.webp" srcset="assets/img/marco-antonio-480.webp 480w, assets/img/marco-antonio-800.webp 800w" sizes="(min-width: 1200px) 460px, (min-width: 768px) 40vw, 90vw" width="800" height="1199" alt="Marco Antônio, web designer da M.A Soluções" fetchpriority="high" decoding="async">
               <span class="stage__shade" aria-hidden="true"></span>
             </div>
 
@@ -292,59 +291,68 @@
           </p>
         </header>
 
-        <!-- SUBSTITUIR: projetos, imagens e resultados abaixo são fictícios -->
         <div class="projects">
           <article class="project" data-reveal>
-            <a class="project__media" href="#" aria-label="Ver projeto Sorriso Prime Odontologia" data-cursor-label="Ver">
-              <img src="assets/img/projeto-odontologia.svg" width="1200" height="800" loading="lazy" decoding="async" alt="Página inicial do site da clínica Sorriso Prime Odontologia">
+            <a class="project__media" href="https://www.ericamirandaadv.com.br/" target="_blank" rel="noopener" aria-label="Ver site de Érica Miranda Advocacia (abre em nova aba)" data-cursor-label="Ver">
+              <img src="assets/img/projeto-erica-miranda-1200.webp" srcset="assets/img/projeto-erica-miranda-800.webp 800w, assets/img/projeto-erica-miranda-1200.webp 1200w" sizes="(min-width: 768px) 55vw, 100vw" width="1200" height="800" loading="lazy" decoding="async" alt="Página inicial do site de Érica Miranda Advocacia, especializada em Direito Bancário em Montalvânia/MG">
             </a>
             <div class="project__body">
               <span class="project__num">01</span>
               <ul class="tags" aria-label="Serviços do projeto">
                 <li>Site institucional</li><li>Google Meu Negócio</li>
               </ul>
-              <h3 class="project__title">Sorriso Prime Odontologia</h3>
-              <p>Site com agendamento direto pelo WhatsApp e perfil no Google reestruturado com fotos, serviços e avaliações.</p>
-              <dl class="project__stats">
-                <div><dt>Ligações pelo Google</dt><dd>+120%</dd></div>
-                <div><dt>Site no ar em</dt><dd>15 dias</dd></div>
-              </dl>
+              <h3 class="project__title">Érica Miranda Advocacia</h3>
+              <p>Site para advogada especializada em Direito Bancário, com atendimento presencial em Montalvânia/MG e online para todo o Brasil. Contato direto pelo WhatsApp e perfil no Google Maps para ser encontrada por quem tem problemas com o banco.</p>
+              <div class="project__links">
+                <a class="link-arrow link-arrow--muted" href="https://www.ericamirandaadv.com.br/" target="_blank" rel="noopener">
+                  Ver site
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                </a>
+                <a class="link-arrow link-arrow--muted" href="https://maps.app.goo.gl/s8LrZuRiovrNYe4b8" target="_blank" rel="noopener">
+                  Ver no Google Maps
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                </a>
+              </div>
             </div>
           </article>
 
           <article class="project project--reverse" data-reveal>
-            <a class="project__media" href="#" aria-label="Ver projeto Casa Brasa Restaurante" data-cursor-label="Ver">
-              <img src="assets/img/projeto-restaurante.svg" width="1200" height="800" loading="lazy" decoding="async" alt="Página inicial do site do restaurante Casa Brasa">
+            <a class="project__media" href="https://criaguetocria.vercel.app/" target="_blank" rel="noopener" aria-label="Ver site da Editora Cria Gueto Cria (abre em nova aba)" data-cursor-label="Ver">
+              <img src="assets/img/projeto-cria-gueto-cria-1200.webp" srcset="assets/img/projeto-cria-gueto-cria-800.webp 800w, assets/img/projeto-cria-gueto-cria-1200.webp 1200w" sizes="(min-width: 768px) 55vw, 100vw" width="1200" height="800" loading="lazy" decoding="async" alt="Página inicial do site da Editora Cria Gueto Cria, casa editorial de Goiânia que publica livros de mulheres negras">
             </a>
             <div class="project__body">
               <span class="project__num">02</span>
               <ul class="tags" aria-label="Serviços do projeto">
-                <li>Landing page</li><li>SEO local</li>
+                <li>Site institucional</li><li>Catálogo digital</li>
               </ul>
-              <h3 class="project__title">Casa Brasa Restaurante</h3>
-              <p>Cardápio digital, reservas pelo WhatsApp e otimização para buscas como “restaurante perto de mim”.</p>
-              <dl class="project__stats">
-                <div><dt>Rotas pelo Maps</dt><dd>+3×</dd></div>
-                <div><dt>Nota no Google</dt><dd>4,8★</dd></div>
-              </dl>
+              <h3 class="project__title">Editora Cria Gueto Cria</h3>
+              <p>Casa editorial de Goiânia que publica livros de mulheres negras. A editora buscava mais credibilidade e uma forma de bom custo-benefício para reunir e arquivar seus projetos. O site organiza o catálogo em uma biblioteca digital e divulga os concursos literários.</p>
+              <div class="project__links">
+                <a class="link-arrow link-arrow--muted" href="https://criaguetocria.vercel.app/" target="_blank" rel="noopener">
+                  Ver site
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                </a>
+              </div>
             </div>
           </article>
 
           <article class="project" data-reveal>
-            <a class="project__media" href="#" aria-label="Ver projeto Andrade &amp; Lima Advocacia" data-cursor-label="Ver">
-              <img src="assets/img/projeto-advocacia.svg" width="1200" height="800" loading="lazy" decoding="async" alt="Página inicial do site do escritório Andrade &amp; Lima Advocacia">
+            <a class="project__media" href="https://www.psivitoriamendonca.com.br/" target="_blank" rel="noopener" aria-label="Ver site da psicóloga Vitória Mendonça (abre em nova aba)" data-cursor-label="Ver">
+              <img src="assets/img/projeto-vitoria-mendonca-1200.webp" srcset="assets/img/projeto-vitoria-mendonca-800.webp 800w, assets/img/projeto-vitoria-mendonca-1200.webp 1200w" sizes="(min-width: 768px) 55vw, 100vw" width="1200" height="800" loading="lazy" decoding="async" alt="Página inicial do site da psicóloga Vitória Mendonça, especialista em Terapia Cognitivo-Comportamental com atendimento online">
             </a>
             <div class="project__body">
               <span class="project__num">03</span>
               <ul class="tags" aria-label="Serviços do projeto">
-                <li>Site institucional</li><li>Google Meu Negócio</li>
+                <li>Site institucional</li>
               </ul>
-              <h3 class="project__title">Andrade &amp; Lima Advocacia</h3>
-              <p>Identidade digital sóbria, páginas por área de atuação e perfil verificado no Google Maps.</p>
-              <dl class="project__stats">
-                <div><dt>Contatos pelo site</dt><dd>+85%</dd></div>
-                <div><dt>Posição no Maps</dt><dd>Top 3</dd></div>
-              </dl>
+              <h3 class="project__title">Psicóloga Vitória Mendonça</h3>
+              <p>Site para psicóloga clínica especialista em Terapia Cognitivo-Comportamental (TCC), com atendimento 100% online para adolescentes, adultos e idosos de todo o Brasil. Agendamento direto pelo WhatsApp e acesso ao Instagram.</p>
+              <div class="project__links">
+                <a class="link-arrow link-arrow--muted" href="https://www.psivitoriamendonca.com.br/" target="_blank" rel="noopener">
+                  Ver site
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                </a>
+              </div>
             </div>
           </article>
         </div>

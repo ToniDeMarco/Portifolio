@@ -7,6 +7,11 @@
 - Configuração e otimização do Google Meu Negócio: criação, verificação, fotos, serviços e estratégia de avaliações para aparecer no Google Maps.
 - SEO local: otimização para buscas como "serviço + cidade" e "perto de mim".
 
+## Projetos
+- Érica Miranda Advocacia (https://www.ericamirandaadv.com.br/): site institucional e Google Meu Negócio para advogada especializada em Direito Bancário, com atendimento presencial em Montalvânia/MG e online para todo o Brasil. Perfil no Google Maps: https://maps.app.goo.gl/s8LrZuRiovrNYe4b8
+- Editora Cria Gueto Cria (https://criaguetocria.vercel.app/): site institucional e catálogo digital para editora literária de Goiânia que publica livros de mulheres negras, com biblioteca dos títulos e divulgação de concursos literários.
+- Psicóloga Vitória Mendonça (https://www.psivitoriamendonca.com.br/): site institucional para psicóloga clínica especialista em Terapia Cognitivo-Comportamental (TCC), com atendimento 100% online para todo o Brasil.
+
 ## Contato
 - WhatsApp: +55 (38) 99866-8730 — https://api.whatsapp.com/send/?phone=5538998668730
 - Instagram: https://www.instagram.com/psivitoria.com.vc/

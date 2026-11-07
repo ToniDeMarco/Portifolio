@@ -39,6 +39,7 @@
   /* Tipografia */
   --ff-serif: "Instrument Serif", Georgia, "Times New Roman", serif;
   --ff-sans: "Work Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ff-tech: "Rajdhani", "Work Sans", system-ui, sans-serif; /* título do hero */
 
   --fs-display: clamp(3.25rem, 1.4rem + 7vw, 6.75rem); /* 52px → 108px */
   --fs-h2: clamp(2.5rem, 1.4rem + 4.4vw, 5rem);       /* 40px → 80px  */
@@ -575,6 +576,7 @@ em { font-style: italic; }
   transition: --glow 0.5s var(--ease);
 }
 .hero__card {
+  container-type: inline-size; /* referência do tamanho do título (cqi) */
   margin-top: 24px;
   padding: clamp(24px, 4vw, 44px);
 }
@@ -646,13 +648,18 @@ em { font-style: italic; }
 
 .hero__title {
   margin-top: 0;
-  font-family: var(--ff-serif);
-  font-weight: 400;
-  font-size: var(--fs-display);
-  line-height: 0.95;
-  letter-spacing: -0.025em;
+  font-family: var(--ff-tech);
+  font-weight: 600;
+  /* Uma linha só: o tamanho acompanha a largura do card (a frase mede ~12,2× o tamanho da fonte) */
+  font-size: 8cqi;
+  line-height: 1;
+  letter-spacing: -0.005em;
+  white-space: nowrap;
+  /* Justificado: a linha única se estende até as duas margens, alinhada aos parágrafos */
+  text-align: justify;
+  text-align-last: justify;
 }
-.hero__title em { color: var(--c-yellow); }
+.hero__title em { font-style: normal; color: var(--c-yellow); }
 
 .hero__lead {
   margin-top: 28px;
@@ -680,6 +687,18 @@ em { font-style: italic; }
 /* Card da foto (estático) */
 .hero__visual {
   padding: 0 8%;
+}
+
+/* Só celular: selo → foto → card de texto → botões → serviços.
+   A troca é só visual; o HTML mantém o título primeiro (leitores de tela e SEO). */
+@media (max-width: 767px) {
+  .hero__grid { row-gap: 0; }
+  .hero__content { display: contents; } /* itens do conteúdo entram direto no grid do hero */
+  .hero__content > .eyebrow { order: -2; }
+  .hero__visual { order: -1; padding: 60px 4% 0; } /* topo: espaço para o badge de estrelas; laterais menores = foto maior */
+  .hero .badge--maps { left: -4%; }                /* não encosta na borda da tela */
+  .hero__card { margin-top: 56px; }               /* espaço para o selo que sai da base da foto */
+  .services { margin-top: 56px; }
 }
 
 .stage {
@@ -1027,6 +1046,17 @@ em { font-style: italic; }
 }
 .project__stats div { display: flex; flex-direction: column-reverse; }
 
+/* Links do case (site e Google Maps), no lugar dos números quando não há métricas */
+.project__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 32px;
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid var(--c-line-dark);
+}
+.project__links .link-arrow:hover .icon { transform: translate(2px, -2px); }
+
 /* Trilhas de conexão (SVG gerado no JS) -------------------------------------- */
 .wires {
   position: absolute;
@@ -1339,7 +1369,7 @@ em { font-style: italic; }
   }
   .hero__content { padding-block: 3vh; }
   .hero__card { margin-top: 2.4vh; padding: clamp(24px, 4.6vh, 44px) clamp(28px, 3.2vw, 44px); }
-  .hero__title { font-size: min(var(--fs-display), 11.6vh); }
+  .hero__title { font-size: min(8cqi, 11.6vh); }
   .hero__lead { margin-top: 2.8vh; font-size: max(1.0625rem, min(var(--fs-lead), 2.6vh)); }
   .hero__text { margin-top: 1.8vh; font-size: max(0.9375rem, min(1rem, 2.1vh)); }
   .hero__actions { margin-top: 3.6vh; }
